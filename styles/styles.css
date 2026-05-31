@@ -1,1 +1,18 @@
+/* 
+* URL to Google Doodle template
+https://codepen.io/manikoth/pen/NNNBYe.css
+*/
 
+* {
+  outline: 1px dotted black;
+}
+
+/* Doodle Stage */
+#stage {
+  background: #ccc;
+  /*   overflow: visible; */
+
+  /* match to your SVG  */
+  height: 300px;
+  width: 600px;
+}

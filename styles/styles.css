@@ -1,39 +1,78 @@
-/* 
-* URL to Google Doodle template
-https://codepen.io/manikoth/pen/NNNBYe.css
-*/
-
 * {
-  outline: 1px dotted black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Doodle Stage */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  font-family: arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Letters */
 #stage {
-  background: #ccc;
-  /*   overflow: visible; */
-
-  /* match to your SVG  */
-  height: 300px;
-  width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 120px;
 }
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background: #fff;
-    }
+#stage img {
+  height: 92px;
+  width: auto;
+}
 
-    .doodle {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
+/* Search bar */
+#search-input {
+  width: 100%;
+  max-width: 550px;
+  padding: 12px 20px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+}
 
-    .doodle img {
-      height: 92px;
-      width: auto;
-    }
+#search-input:hover,
+#search-input:focus {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+/* Search buttons */
+#search-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+#search-buttons button {
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+#search-buttons button:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  border-color: #dadce0;
+}
 

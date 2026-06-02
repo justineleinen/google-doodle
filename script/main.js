@@ -1,10 +1,4 @@
-// GSAP Library
-// https://unpkg.com/gsap@3/dist/gsap.min.js
-
-// GSAP Dev Tools
-GSDevTools.create();
-
-gsap.registerPlugin();
+// GSAP animations
 
 // Ghost G - float up and down + fade in on load
 gsap.from("#big-G", { opacity: 0, duration: 1, ease: "power2.out" });
@@ -17,7 +11,7 @@ gsap.to("#big-G", {
   delay: 1
 });
 
-// Pumpkins (o, o, e) - wobble
+// Pumpkins - wobble
 gsap.to("#o", {
   rotation: 3,
   duration: 2,
@@ -27,13 +21,23 @@ gsap.to("#o", {
   transformOrigin: "bottom center"
 });
 
-gsap.to("#e", {
+gsap.to("#o2", {
   rotation: -3,
   duration: 2,
   ease: "sine.inOut",
   repeat: -1,
   yoyo: true,
-  delay: 0.3,
+  delay: 0.2,
+  transformOrigin: "bottom center"
+});
+
+gsap.to("#e", {
+  rotation: 3,
+  duration: 2,
+  ease: "sine.inOut",
+  repeat: -1,
+  yoyo: true,
+  delay: 0.4,
   transformOrigin: "bottom center"
 });
 

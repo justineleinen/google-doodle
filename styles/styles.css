@@ -16,3 +16,24 @@ https://codepen.io/manikoth/pen/NNNBYe.css
   height: 300px;
   width: 600px;
 }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #fff;
+    }
+
+    .doodle {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .doodle img {
+      height: 92px;
+      width: auto;
+    }
+

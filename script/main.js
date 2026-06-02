@@ -1,6 +1,6 @@
 // GSAP animations
 
-// Ghost G - float up and down + fade in on load
+// Ghost G
 gsap.from("#big-G", { opacity: 0, duration: 1, ease: "power2.out" });
 gsap.to("#big-G", {
   y: -12,
@@ -11,7 +11,7 @@ gsap.to("#big-G", {
   delay: 1
 });
 
-// Pumpkins - wobble
+// Pumpkins
 gsap.to("#o", {
   rotation: 3,
   duration: 2,
@@ -41,7 +41,7 @@ gsap.to("#e", {
   transformOrigin: "bottom center"
 });
 
-// Cat G - tail swish
+// Cat G
 gsap.to("#g", {
   rotation: 4,
   duration: 1.5,
@@ -51,7 +51,7 @@ gsap.to("#g", {
   transformOrigin: "bottom center"
 });
 
-// Candle L - flicker
+// Candle L
 gsap.to("#l", {
   opacity: 0.7,
   scaleX: 1.02,

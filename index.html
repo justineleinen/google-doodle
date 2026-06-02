@@ -1,34 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google Doodle</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+<body>
+  <main>
+    <div id="stage">
+      <img src="images/big-g.svg" alt="G" id="big-G">
+      <img src="images/o.svg"     alt="o" id="o">
+      <img src="images/o.svg"     alt="o" id="o2">
+      <img src="images/g.svg"     alt="g" id="g">
+      <img src="images/l.svg"     alt="l" id="l">
+      <img src="images/e.svg"     alt="e" id="e">
+    </div>
+    <input type="text" id="search-input" placeholder="Search Google or type a URL" />
+    <div id="search-buttons">
+      <button>Google Search</button>
+      <button>I'm Feeling Lucky</button>
+    </div>
+  </main>
 
-<!-- Container -->
-<main>
-
-  <!-- Doodle Stage -->
-  <div id="stage">
-
-    <!-- SVG -->
-<img src="images/big-g.svg" alt="G" id="big-G">
-<img src="images/o.svg"     alt="o" id="o">
-<img src="images/o.svg"     alt="o" id="o2">
-<img src="images/g.svg"     alt="g" id="g">
-<img src="images/l.svg"     alt="l" id="l">
-<img src="images/e.svg"     alt="e" id="e">
-
-  </div>
-
-  <!-- Static template   -->
-  <input type="text" />
-  <div id="search">
-    <button>Google Search</button>
-    <button>I'm Feeling Lucky</button>
-  </div>
-
-</main>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="scripts/main.js"></script>
+</body>
 </html>
